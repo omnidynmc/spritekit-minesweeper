@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4504" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3734.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSWMineViewController">
+            <connections>
+                <outlet property="cheatButton" destination="J0U-cf-YC7" id="rFc-9G-av1"/>
+                <outlet property="gameButton" destination="qfb-rh-m84" id="hJR-Oc-03f"/>
+                <outlet property="mineView" destination="CFD-NX-HEm" id="Qjn-Hj-gw4"/>
+                <outlet property="skView" destination="uhd-Nj-wf6" id="W5J-lt-uDx"/>
+                <outlet property="verifyButton" destination="dZv-nf-DtD" id="x5z-sI-0gh"/>
+                <outlet property="view" destination="1" id="N96-Zr-9rc"/>
+                <outlet property="winConditionLabel" destination="6h8-HQ-gg5" id="0vc-3T-HxJ"/>
+                <outletCollection property="gameButtons" destination="dZv-nf-DtD" id="PbY-1M-jDt"/>
+                <outletCollection property="gameButtons" destination="Kr9-6K-se9" id="0gs-HM-jZb"/>
+                <outletCollection property="gameButtons" destination="J0U-cf-YC7" id="fvG-dX-nZt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MSWBackground" id="SJY-vA-JJx">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="uhd-Nj-wf6" userLabel="Animation View" customClass="SKView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="CFD-NX-HEm" customClass="MSWMineView">
+                            <rect key="frame" x="20" y="77" width="280" height="391"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="cmY-mf-7Em"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MSWNavigationBackground" id="q6I-4N-erU">
+                    <rect key="frame" x="0.0" y="481" width="320" height="88"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qfb-rh-m84">
+                    <rect key="frame" x="0.0" y="533" width="80" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="14" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="New" backgroundImage="MSWNavigationLeft">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="MSWNavigationLeft"/>
+                    <state key="highlighted" backgroundImage="MSWNavigationLeftHighlighted"/>
+                    <connections>
+                        <action selector="didTouchNewButton:" destination="-1" eventType="touchUpInside" id="QWg-HB-jGF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="J0U-cf-YC7">
+                    <rect key="frame" x="240" y="533" width="80" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="14" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Cheat" backgroundImage="MSWNavigationRight">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="MSWNavigationRight">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="MSWNavigationRightHighlighted"/>
+                    <connections>
+                        <action selector="didTouchDownCheatButton:" destination="-1" eventType="touchDown" id="4CX-Ls-7vs"/>
+                        <action selector="didTouchUpCheatButton:" destination="-1" eventType="touchUpInside" id="1FC-rB-yOW"/>
+                        <action selector="didTouchUpCheatButton:" destination="-1" eventType="touchUpOutside" id="a9i-9h-57G"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dZv-nf-DtD">
+                    <rect key="frame" x="80" y="533" width="80" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="14" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Verify" backgroundImage="MSWNavigationMiddle">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="MSWNavigationMiddle">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="MSWNavigationMiddleHighlighted"/>
+                    <connections>
+                        <action selector="didTouchVerifyButton:" destination="-1" eventType="touchUpInside" id="VUG-se-Txn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kr9-6K-se9">
+                    <rect key="frame" x="160" y="533" width="80" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="14" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Flag" backgroundImage="MSWNavigationMiddle"/>
+                    <state key="disabled" backgroundImage="MSWNavigationMiddle">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.91180294750000002" green="0.012269333069999999" blue="0.058775141080000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="MSWNavigationMiddleHighlighted"/>
+                    <connections>
+                        <action selector="didTouchFlagButton:" destination="-1" eventType="touchUpInside" id="Lx0-S3-c6Y"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Win Condition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6h8-HQ-gg5">
+                    <rect key="frame" x="20" y="460" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MSWBackground" width="320" height="568"/>
+        <image name="MSWNavigationBackground" width="320" height="88"/>
+        <image name="MSWNavigationLeft" width="16" height="35"/>
+        <image name="MSWNavigationLeftHighlighted" width="16" height="35"/>
+        <image name="MSWNavigationMiddle" width="1" height="35"/>
+        <image name="MSWNavigationMiddleHighlighted" width="1" height="35"/>
+        <image name="MSWNavigationRight" width="16" height="35"/>
+        <image name="MSWNavigationRightHighlighted" width="16" height="35"/>
+    </resources>
+</document>

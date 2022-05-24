@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'OpenEssentials' target in the 'OpenEssentials' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+
+    #import "OESEmpty.h"
+    #import "OESLogging.h"
+    #import "OESSharedInstance.h"
+    #import "NSError+OESAdditions.h"
+    #import "NSNotificationCenter+OESAdditions.h"
+#endif

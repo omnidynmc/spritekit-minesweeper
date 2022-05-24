@@ -1,0 +1,1040 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B30C5DD717344ACC0025D0BC /* OESAutomatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = B30C5DD617344ACC0025D0BC /* OESAutomatedController.m */; };
+		B30C5DDA17344B440025D0BC /* NSNotificationCenter+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B30C5DD917344B440025D0BC /* NSNotificationCenter+OESAdditions.m */; };
+		B33BB3341651506000DDAC47 /* UIImageView+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33BB3331651506000DDAC47 /* UIImageView+OESAdditions.m */; };
+		B35ECE60173DA714001689F0 /* NSObject+OESControllerAutomation.m in Sources */ = {isa = PBXBuildFile; fileRef = B35ECE5F173DA714001689F0 /* NSObject+OESControllerAutomation.m */; };
+		B38D706C16D2EF900065D506 /* OESSerialNumberDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38D706B16D2EF900065D506 /* OESSerialNumberDataController.m */; };
+		B38D706F16D2EFB50065D506 /* OESSerialNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B38D706E16D2EFB50065D506 /* OESSerialNumber.m */; };
+		B39061D61636F17200F0CF6F /* UIViewController+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B39061D51636F17200F0CF6F /* UIViewController+OESAdditions.m */; };
+		B3909EDD164D5E990078CAA1 /* OESNetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3909EDC164D5E990078CAA1 /* OESNetworkController.m */; };
+		B3909EE1164D5F4D0078CAA1 /* OESXMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B3909EE0164D5F4D0078CAA1 /* OESXMLReader.m */; };
+		B395A810164B76E100B3AFE7 /* OESInfiniteCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = B395A80F164B76E100B3AFE7 /* OESInfiniteCarouselView.m */; };
+		B39621471678E9BB0069694B /* NSURLRequest+IgnoreSSL.m in Sources */ = {isa = PBXBuildFile; fileRef = B39621461678E9BB0069694B /* NSURLRequest+IgnoreSSL.m */; };
+		B396707416C9AFB50000FA6E /* OESFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B396707316C9AFB50000FA6E /* OESFeedManager.m */; };
+		B39736F2161625F9002245B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39736F1161625F9002245B1 /* Foundation.framework */; };
+		B39736F7161625F9002245B1 /* OpenEssentials.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B39736F6161625F9002245B1 /* OpenEssentials.h */; };
+		B39736F9161625F9002245B1 /* OpenEssentials.m in Sources */ = {isa = PBXBuildFile; fileRef = B39736F8161625F9002245B1 /* OpenEssentials.m */; };
+		B3973701161625FA002245B1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3973700161625FA002245B1 /* SenTestingKit.framework */; };
+		B3973703161625FA002245B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3973702161625FA002245B1 /* UIKit.framework */; };
+		B3973704161625FA002245B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39736F1161625F9002245B1 /* Foundation.framework */; };
+		B3973707161625FA002245B1 /* libOpenEssentials.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B39736EE161625F9002245B1 /* libOpenEssentials.a */; };
+		B397370D161625FA002245B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B397370B161625FA002245B1 /* InfoPlist.strings */; };
+		B3973710161625FA002245B1 /* OpenEssentialsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B397370F161625FA002245B1 /* OpenEssentialsTests.m */; };
+		B39737241616274C002245B1 /* UIView+OESView.m in Sources */ = {isa = PBXBuildFile; fileRef = B39737231616274C002245B1 /* UIView+OESView.m */; };
+		B39737251616274C002245B1 /* UIView+OESView.m in Sources */ = {isa = PBXBuildFile; fileRef = B39737231616274C002245B1 /* UIView+OESView.m */; };
+		B3991CDD170DCC29001DEAB7 /* OESConfigSerialDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3991CDC170DCC29001DEAB7 /* OESConfigSerialDataController.m */; };
+		B3991CE0170DCCAD001DEAB7 /* OESConfigSerial.m in Sources */ = {isa = PBXBuildFile; fileRef = B3991CDF170DCCAD001DEAB7 /* OESConfigSerial.m */; };
+		B39BECAB175F97620039E903 /* OESParallaxImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B39BECAA175F97620039E903 /* OESParallaxImage.m */; };
+		B39BECAF175F97D80039E903 /* OESParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = B39BECAE175F97D80039E903 /* OESParallaxView.m */; };
+		B39E43701663CB2700523610 /* OESURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B39E436F1663CB2700523610 /* OESURLConnection.m */; };
+		B39F99FC17E760E300598A28 /* UIButton+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B39F99FB17E760E300598A28 /* UIButton+OESAdditions.m */; };
+		B39FCAB11629B985004E74BF /* UIImageView+RemoteFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAB01629B985004E74BF /* UIImageView+RemoteFetching.m */; };
+		B39FCAB51629BA54004E74BF /* NSError+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAB41629BA53004E74BF /* NSError+OESAdditions.m */; };
+		B39FCAB81629BA9F004E74BF /* UIImage+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAB71629BA9F004E74BF /* UIImage+OESAdditions.m */; };
+		B39FCABB1629BAEF004E74BF /* NSDictionary+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCABA1629BAEF004E74BF /* NSDictionary+OESAdditions.m */; };
+		B39FCAC01629BC3B004E74BF /* OESStopwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCABF1629BC3B004E74BF /* OESStopwatch.m */; };
+		B39FCAC21629BC83004E74BF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39FCAC11629BC83004E74BF /* QuartzCore.framework */; };
+		B39FCAC71629BD40004E74BF /* OESModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAC61629BD40004E74BF /* OESModelManager.m */; };
+		B39FCACC1629BEE4004E74BF /* OESTwitterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCACB1629BEE4004E74BF /* OESTwitterManager.m */; };
+		B39FCAD01629BFD9004E74BF /* OESTwitterAction.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCACF1629BFD9004E74BF /* OESTwitterAction.m */; };
+		B39FCAD51629C0D4004E74BF /* OESDynamicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAD41629C0D4004E74BF /* OESDynamicObject.m */; };
+		B39FCAF91629C2F1004E74BF /* OESConfigApp.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAD81629C2F1004E74BF /* OESConfigApp.m */; };
+		B39FCAFA1629C2F1004E74BF /* OESConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCADA1629C2F1004E74BF /* OESConfig.m */; };
+		B39FCAFB1629C2F1004E74BF /* OESConfigDatatype.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCADC1629C2F1004E74BF /* OESConfigDatatype.m */; };
+		B39FCAFC1629C2F1004E74BF /* OESConfigDatatypeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCADE1629C2F1004E74BF /* OESConfigDatatypeParser.m */; };
+		B39FCAFD1629C2F1004E74BF /* OESConfigDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAE01629C2F1004E74BF /* OESConfigDebug.m */; };
+		B39FCAFE1629C2F1004E74BF /* OESConfigEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAE21629C2F1004E74BF /* OESConfigEndpoint.m */; };
+		B39FCAFF1629C2F1004E74BF /* OESConfigEndpoints.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAE41629C2F1004E74BF /* OESConfigEndpoints.m */; };
+		B39FCB001629C2F1004E74BF /* OESConfigException.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAE61629C2F1004E74BF /* OESConfigException.m */; };
+		B39FCB011629C2F1004E74BF /* OESConfigFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAE81629C2F1004E74BF /* OESConfigFeature.m */; };
+		B39FCB021629C2F1004E74BF /* OESConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAEB1629C2F1004E74BF /* OESConfigManager.m */; };
+		B39FCB031629C2F1004E74BF /* OESConfigMode.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAED1629C2F1004E74BF /* OESConfigMode.m */; };
+		B39FCB041629C2F1004E74BF /* OESConfigObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAEF1629C2F1004E74BF /* OESConfigObject.m */; };
+		B39FCB051629C2F1004E74BF /* OESConfigParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAF11629C2F1004E74BF /* OESConfigParser.m */; };
+		B39FCB061629C2F1004E74BF /* OESConfigParserAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAF31629C2F1004E74BF /* OESConfigParserAbstract.m */; };
+		B39FCB071629C2F1004E74BF /* OESConfigVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAF61629C2F1004E74BF /* OESConfigVariable.m */; };
+		B39FCB081629C2F1004E74BF /* OESConfigVariableParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCAF81629C2F1004E74BF /* OESConfigVariableParser.m */; };
+		B39FCB0D1629C5DF004E74BF /* OESFileStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCB0C1629C5DF004E74BF /* OESFileStoreController.m */; };
+		B39FCB101629C658004E74BF /* OESDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39FCB0F1629C658004E74BF /* OESDataController.m */; };
+		B3F19C571651C72100085AD1 /* OESIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F19C561651C72100085AD1 /* OESIBView.m */; };
+		B3F2CC181631F6AF00C12A3B /* NSObject+PropertyTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F2CC171631F6AF00C12A3B /* NSObject+PropertyTypes.m */; };
+		D84AB871165F23D5001691C7 /* OESButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D84AB870165F23D5001691C7 /* OESButton.m */; };
+		D865547917ED50570072511A /* UITextField+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D865547817ED50570072511A /* UITextField+OESAdditions.m */; };
+		D88678E717DBDF1700F63236 /* OESContainmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88678E617DBDF1700F63236 /* OESContainmentViewController.m */; };
+		D889B0CF1664825E00BB279A /* NSString+StripHtml.m in Sources */ = {isa = PBXBuildFile; fileRef = D889B0CE1664825E00BB279A /* NSString+StripHtml.m */; };
+		D88A324916E02EDB00A8665C /* UILabel+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D88A324816E02EDB00A8665C /* UILabel+OESAdditions.m */; };
+		D88A325516E0462D00A8665C /* NSDate+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D88A325416E0462C00A8665C /* NSDate+OESAdditions.m */; };
+		D88AB5B1165D2EDD0068C825 /* OESInfiniteLabelScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88AB5B0165D2EDD0068C825 /* OESInfiniteLabelScrollView.m */; };
+		D88D047716E9940A00FE09E3 /* OESActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D88D047616E9940A00FE09E3 /* OESActivityIndicatorManager.m */; };
+		D88D047A16E9ABB100FE09E3 /* NSArray+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D88D047916E9ABB100FE09E3 /* NSArray+OESAdditions.m */; };
+		D88D047D16E9AC4700FE09E3 /* NSMutableArray+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D88D047C16E9AC4600FE09E3 /* NSMutableArray+OESAdditions.m */; };
+		D88D048216F021F000FE09E3 /* OESPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D88D048116F021EF00FE09E3 /* OESPageControl.m */; };
+		D88D9FFB1655CF2900959AE2 /* OESCoreTextArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88D9FFA1655CF2900959AE2 /* OESCoreTextArcView.m */; };
+		D88D9FFE1655D17F00959AE2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88D9FFD1655D17F00959AE2 /* CoreText.framework */; };
+		D88F1B4117E7EF9B002C2533 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88F1B4017E7EF9B002C2533 /* AdSupport.framework */; };
+		D88F1B4317E7EFA1002C2533 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88F1B4217E7EFA1002C2533 /* Twitter.framework */; };
+		D88F1B4517E7EFA7002C2533 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88F1B4417E7EFA7002C2533 /* iAd.framework */; };
+		D88F1B4717E7EFAD002C2533 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88F1B4617E7EFAD002C2533 /* Accounts.framework */; };
+		D89C3D0F1774F93800B70998 /* NSObject+OESStatefulObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = D89C3D0E1774F93800B70998 /* NSObject+OESStatefulObjects.m */; };
+		D89C3D101774F93800B70998 /* NSObject+OESStatefulObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = D89C3D0E1774F93800B70998 /* NSObject+OESStatefulObjects.m */; };
+		D8A5693F16619CA500453962 /* NSString+URLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A5693E16619CA500453962 /* NSString+URLEncode.m */; };
+		D8A652D0162B0AB3003A147F /* NSObject+OESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A652CF162B0AB3003A147F /* NSObject+OESAdditions.m */; };
+		D8B8D2A716CB2A110032FDB8 /* OESAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B8D2A616CB2A110032FDB8 /* OESAdManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3973705161625FA002245B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B39736E5161625F9002245B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B39736ED161625F9002245B1;
+			remoteInfo = OpenEssentials;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B39736EC161625F9002245B1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				B39736F7161625F9002245B1 /* OpenEssentials.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B30C5DD517344ACC0025D0BC /* OESAutomatedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESAutomatedController.h; path = Classes/Controllers/Abstract/OESAutomatedController.h; sourceTree = "<group>"; };
+		B30C5DD617344ACC0025D0BC /* OESAutomatedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESAutomatedController.m; path = Classes/Controllers/Abstract/OESAutomatedController.m; sourceTree = "<group>"; };
+		B30C5DD817344B440025D0BC /* NSNotificationCenter+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OESAdditions.h"; path = "Classes/Categories/NSNotificationCenter+OESAdditions.h"; sourceTree = "<group>"; };
+		B30C5DD917344B440025D0BC /* NSNotificationCenter+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+OESAdditions.m"; path = "Classes/Categories/NSNotificationCenter+OESAdditions.m"; sourceTree = "<group>"; };
+		B33BB3321651506000DDAC47 /* UIImageView+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+OESAdditions.h"; path = "Classes/Categories/UIImageView+OESAdditions.h"; sourceTree = "<group>"; };
+		B33BB3331651506000DDAC47 /* UIImageView+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+OESAdditions.m"; path = "Classes/Categories/UIImageView+OESAdditions.m"; sourceTree = "<group>"; };
+		B35ECE5E173DA714001689F0 /* NSObject+OESControllerAutomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+OESControllerAutomation.h"; path = "Classes/Categories/NSObject+OESControllerAutomation.h"; sourceTree = "<group>"; };
+		B35ECE5F173DA714001689F0 /* NSObject+OESControllerAutomation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+OESControllerAutomation.m"; path = "Classes/Categories/NSObject+OESControllerAutomation.m"; sourceTree = "<group>"; };
+		B38D706A16D2EF900065D506 /* OESSerialNumberDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESSerialNumberDataController.h; path = Classes/Controllers/Data/OESSerialNumberDataController/OESSerialNumberDataController.h; sourceTree = "<group>"; };
+		B38D706B16D2EF900065D506 /* OESSerialNumberDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESSerialNumberDataController.m; path = Classes/Controllers/Data/OESSerialNumberDataController/OESSerialNumberDataController.m; sourceTree = "<group>"; };
+		B38D706D16D2EFB50065D506 /* OESSerialNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESSerialNumber.h; path = Classes/Controllers/Data/Objects/OESSerialNumber.h; sourceTree = "<group>"; };
+		B38D706E16D2EFB50065D506 /* OESSerialNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESSerialNumber.m; path = Classes/Controllers/Data/Objects/OESSerialNumber.m; sourceTree = "<group>"; };
+		B39061D41636F17200F0CF6F /* UIViewController+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+OESAdditions.h"; path = "Classes/Categories/UIViewController+OESAdditions.h"; sourceTree = "<group>"; };
+		B39061D51636F17200F0CF6F /* UIViewController+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+OESAdditions.m"; path = "Classes/Categories/UIViewController+OESAdditions.m"; sourceTree = "<group>"; };
+		B3909EDB164D5E990078CAA1 /* OESNetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESNetworkController.h; path = Classes/Controllers/Data/Abstract/OESNetworkController.h; sourceTree = "<group>"; };
+		B3909EDC164D5E990078CAA1 /* OESNetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESNetworkController.m; path = Classes/Controllers/Data/Abstract/OESNetworkController.m; sourceTree = "<group>"; };
+		B3909EDF164D5F4D0078CAA1 /* OESXMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESXMLReader.h; path = Helpers/OESXMLReader.h; sourceTree = "<group>"; };
+		B3909EE0164D5F4D0078CAA1 /* OESXMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESXMLReader.m; path = Helpers/OESXMLReader.m; sourceTree = "<group>"; };
+		B395A80E164B76E100B3AFE7 /* OESInfiniteCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESInfiniteCarouselView.h; path = Classes/Controllers/View/OESInfiniteCarouselView.h; sourceTree = "<group>"; };
+		B395A80F164B76E100B3AFE7 /* OESInfiniteCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESInfiniteCarouselView.m; path = Classes/Controllers/View/OESInfiniteCarouselView.m; sourceTree = "<group>"; };
+		B39621451678E9BB0069694B /* NSURLRequest+IgnoreSSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+IgnoreSSL.h"; path = "Classes/Categories/NSURLRequest+IgnoreSSL.h"; sourceTree = "<group>"; };
+		B39621461678E9BB0069694B /* NSURLRequest+IgnoreSSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+IgnoreSSL.m"; path = "Classes/Categories/NSURLRequest+IgnoreSSL.m"; sourceTree = "<group>"; };
+		B396707216C9AFB50000FA6E /* OESFeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESFeedManager.h; path = Classes/Singletons/OESFeedManager/OESFeedManager.h; sourceTree = "<group>"; };
+		B396707316C9AFB50000FA6E /* OESFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESFeedManager.m; path = Classes/Singletons/OESFeedManager/OESFeedManager.m; sourceTree = "<group>"; };
+		B39736EE161625F9002245B1 /* libOpenEssentials.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenEssentials.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39736F1161625F9002245B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B39736F5161625F9002245B1 /* OpenEssentials-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenEssentials-Prefix.pch"; sourceTree = "<group>"; };
+		B39736F6161625F9002245B1 /* OpenEssentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenEssentials.h; sourceTree = "<group>"; };
+		B39736F8161625F9002245B1 /* OpenEssentials.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenEssentials.m; sourceTree = "<group>"; };
+		B39736FF161625FA002245B1 /* OpenEssentialsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenEssentialsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3973700161625FA002245B1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B3973702161625FA002245B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B397370A161625FA002245B1 /* OpenEssentialsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenEssentialsTests-Info.plist"; sourceTree = "<group>"; };
+		B397370C161625FA002245B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B397370E161625FA002245B1 /* OpenEssentialsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenEssentialsTests.h; sourceTree = "<group>"; };
+		B397370F161625FA002245B1 /* OpenEssentialsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenEssentialsTests.m; sourceTree = "<group>"; };
+		B3973721161626DB002245B1 /* OESEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESEmpty.h; path = Helpers/OESEmpty.h; sourceTree = "<group>"; };
+		B39737221616274C002245B1 /* UIView+OESView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+OESView.h"; path = "Classes/Categories/UIView+OESView.h"; sourceTree = "<group>"; };
+		B39737231616274C002245B1 /* UIView+OESView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+OESView.m"; path = "Classes/Categories/UIView+OESView.m"; sourceTree = "<group>"; };
+		B3991CDB170DCC29001DEAB7 /* OESConfigSerialDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigSerialDataController.h; path = Classes/Controllers/Data/OESConfigSerialDataController/OESConfigSerialDataController.h; sourceTree = "<group>"; };
+		B3991CDC170DCC29001DEAB7 /* OESConfigSerialDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigSerialDataController.m; path = Classes/Controllers/Data/OESConfigSerialDataController/OESConfigSerialDataController.m; sourceTree = "<group>"; };
+		B3991CDE170DCCAD001DEAB7 /* OESConfigSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigSerial.h; path = Classes/Controllers/Data/Objects/OESConfigSerial.h; sourceTree = "<group>"; };
+		B3991CDF170DCCAD001DEAB7 /* OESConfigSerial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigSerial.m; path = Classes/Controllers/Data/Objects/OESConfigSerial.m; sourceTree = "<group>"; };
+		B39BECA9175F97620039E903 /* OESParallaxImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESParallaxImage.h; path = Classes/Model/OESParallaxImage.h; sourceTree = "<group>"; };
+		B39BECAA175F97620039E903 /* OESParallaxImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESParallaxImage.m; path = Classes/Model/OESParallaxImage.m; sourceTree = "<group>"; };
+		B39BECAD175F97D80039E903 /* OESParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESParallaxView.h; path = Classes/Views/OESParallaxView.h; sourceTree = "<group>"; };
+		B39BECAE175F97D80039E903 /* OESParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESParallaxView.m; path = Classes/Views/OESParallaxView.m; sourceTree = "<group>"; };
+		B39E436E1663CB2700523610 /* OESURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESURLConnection.h; path = Helpers/OESURLConnection.h; sourceTree = "<group>"; };
+		B39E436F1663CB2700523610 /* OESURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESURLConnection.m; path = Helpers/OESURLConnection.m; sourceTree = "<group>"; };
+		B39F99FA17E760E300598A28 /* UIButton+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+OESAdditions.h"; path = "Classes/Categories/UIButton+OESAdditions.h"; sourceTree = "<group>"; };
+		B39F99FB17E760E300598A28 /* UIButton+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+OESAdditions.m"; path = "Classes/Categories/UIButton+OESAdditions.m"; sourceTree = "<group>"; };
+		B39FCAAF1629B985004E74BF /* UIImageView+RemoteFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RemoteFetching.h"; path = "Classes/Categories/UIImageView+RemoteFetching.h"; sourceTree = "<group>"; };
+		B39FCAB01629B985004E74BF /* UIImageView+RemoteFetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RemoteFetching.m"; path = "Classes/Categories/UIImageView+RemoteFetching.m"; sourceTree = "<group>"; };
+		B39FCAB31629BA53004E74BF /* NSError+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+OESAdditions.h"; path = "Classes/Categories/NSError+OESAdditions.h"; sourceTree = "<group>"; };
+		B39FCAB41629BA53004E74BF /* NSError+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+OESAdditions.m"; path = "Classes/Categories/NSError+OESAdditions.m"; sourceTree = "<group>"; };
+		B39FCAB61629BA9F004E74BF /* UIImage+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+OESAdditions.h"; path = "Classes/Categories/UIImage+OESAdditions.h"; sourceTree = "<group>"; };
+		B39FCAB71629BA9F004E74BF /* UIImage+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+OESAdditions.m"; path = "Classes/Categories/UIImage+OESAdditions.m"; sourceTree = "<group>"; };
+		B39FCAB91629BAEF004E74BF /* NSDictionary+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+OESAdditions.h"; path = "Classes/Categories/NSDictionary+OESAdditions.h"; sourceTree = "<group>"; };
+		B39FCABA1629BAEF004E74BF /* NSDictionary+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+OESAdditions.m"; path = "Classes/Categories/NSDictionary+OESAdditions.m"; sourceTree = "<group>"; };
+		B39FCABC1629BB7E004E74BF /* OESLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OESLogging.h; path = Helpers/OESLogging.h; sourceTree = "<group>"; };
+		B39FCABD1629BBFF004E74BF /* OESSharedInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OESSharedInstance.h; path = Helpers/OESSharedInstance.h; sourceTree = "<group>"; };
+		B39FCABE1629BC3B004E74BF /* OESStopwatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESStopwatch.h; path = Helpers/OESStopwatch.h; sourceTree = "<group>"; };
+		B39FCABF1629BC3B004E74BF /* OESStopwatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESStopwatch.m; path = Helpers/OESStopwatch.m; sourceTree = "<group>"; };
+		B39FCAC11629BC83004E74BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B39FCAC51629BD40004E74BF /* OESModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESModelManager.h; path = "Classes/Singletons/Model Manager/OESModelManager.h"; sourceTree = "<group>"; };
+		B39FCAC61629BD40004E74BF /* OESModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESModelManager.m; path = "Classes/Singletons/Model Manager/OESModelManager.m"; sourceTree = "<group>"; };
+		B39FCACA1629BEE4004E74BF /* OESTwitterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESTwitterManager.h; path = Classes/Singletons/Twitter/OESTwitterManager.h; sourceTree = "<group>"; };
+		B39FCACB1629BEE4004E74BF /* OESTwitterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESTwitterManager.m; path = Classes/Singletons/Twitter/OESTwitterManager.m; sourceTree = "<group>"; };
+		B39FCACD1629BF96004E74BF /* OESTwitterManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OESTwitterManagerDelegate.h; path = Classes/Singletons/Twitter/OESTwitterManagerDelegate.h; sourceTree = "<group>"; };
+		B39FCACE1629BFD9004E74BF /* OESTwitterAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESTwitterAction.h; path = Classes/Singletons/Twitter/OESTwitterAction.h; sourceTree = "<group>"; };
+		B39FCACF1629BFD9004E74BF /* OESTwitterAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESTwitterAction.m; path = Classes/Singletons/Twitter/OESTwitterAction.m; sourceTree = "<group>"; };
+		B39FCAD31629C0D4004E74BF /* OESDynamicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESDynamicObject.h; path = Classes/Controllers/Data/Objects/OESDynamicObject.h; sourceTree = "<group>"; };
+		B39FCAD41629C0D4004E74BF /* OESDynamicObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESDynamicObject.m; path = Classes/Controllers/Data/Objects/OESDynamicObject.m; sourceTree = "<group>"; };
+		B39FCAD71629C2F1004E74BF /* OESConfigApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigApp.h; path = Classes/Singletons/Config/OESConfigApp.h; sourceTree = "<group>"; };
+		B39FCAD81629C2F1004E74BF /* OESConfigApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigApp.m; path = Classes/Singletons/Config/OESConfigApp.m; sourceTree = "<group>"; };
+		B39FCAD91629C2F1004E74BF /* OESConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfig.h; path = Classes/Singletons/Config/OESConfig.h; sourceTree = "<group>"; };
+		B39FCADA1629C2F1004E74BF /* OESConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfig.m; path = Classes/Singletons/Config/OESConfig.m; sourceTree = "<group>"; };
+		B39FCADB1629C2F1004E74BF /* OESConfigDatatype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigDatatype.h; path = Classes/Singletons/Config/OESConfigDatatype.h; sourceTree = "<group>"; };
+		B39FCADC1629C2F1004E74BF /* OESConfigDatatype.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigDatatype.m; path = Classes/Singletons/Config/OESConfigDatatype.m; sourceTree = "<group>"; };
+		B39FCADD1629C2F1004E74BF /* OESConfigDatatypeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigDatatypeParser.h; path = Classes/Singletons/Config/OESConfigDatatypeParser.h; sourceTree = "<group>"; };
+		B39FCADE1629C2F1004E74BF /* OESConfigDatatypeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigDatatypeParser.m; path = Classes/Singletons/Config/OESConfigDatatypeParser.m; sourceTree = "<group>"; };
+		B39FCADF1629C2F1004E74BF /* OESConfigDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigDebug.h; path = Classes/Singletons/Config/OESConfigDebug.h; sourceTree = "<group>"; };
+		B39FCAE01629C2F1004E74BF /* OESConfigDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigDebug.m; path = Classes/Singletons/Config/OESConfigDebug.m; sourceTree = "<group>"; };
+		B39FCAE11629C2F1004E74BF /* OESConfigEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigEndpoint.h; path = Classes/Singletons/Config/OESConfigEndpoint.h; sourceTree = "<group>"; };
+		B39FCAE21629C2F1004E74BF /* OESConfigEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigEndpoint.m; path = Classes/Singletons/Config/OESConfigEndpoint.m; sourceTree = "<group>"; };
+		B39FCAE31629C2F1004E74BF /* OESConfigEndpoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigEndpoints.h; path = Classes/Singletons/Config/OESConfigEndpoints.h; sourceTree = "<group>"; };
+		B39FCAE41629C2F1004E74BF /* OESConfigEndpoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigEndpoints.m; path = Classes/Singletons/Config/OESConfigEndpoints.m; sourceTree = "<group>"; };
+		B39FCAE51629C2F1004E74BF /* OESConfigException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigException.h; path = Classes/Singletons/Config/OESConfigException.h; sourceTree = "<group>"; };
+		B39FCAE61629C2F1004E74BF /* OESConfigException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigException.m; path = Classes/Singletons/Config/OESConfigException.m; sourceTree = "<group>"; };
+		B39FCAE71629C2F1004E74BF /* OESConfigFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigFeature.h; path = Classes/Singletons/Config/OESConfigFeature.h; sourceTree = "<group>"; };
+		B39FCAE81629C2F1004E74BF /* OESConfigFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigFeature.m; path = Classes/Singletons/Config/OESConfigFeature.m; sourceTree = "<group>"; };
+		B39FCAE91629C2F1004E74BF /* OESConfigFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigFramework.h; path = Classes/Singletons/Config/OESConfigFramework.h; sourceTree = "<group>"; };
+		B39FCAEA1629C2F1004E74BF /* OESConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigManager.h; path = Classes/Singletons/Config/OESConfigManager.h; sourceTree = "<group>"; };
+		B39FCAEB1629C2F1004E74BF /* OESConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigManager.m; path = Classes/Singletons/Config/OESConfigManager.m; sourceTree = "<group>"; };
+		B39FCAEC1629C2F1004E74BF /* OESConfigMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigMode.h; path = Classes/Singletons/Config/OESConfigMode.h; sourceTree = "<group>"; };
+		B39FCAED1629C2F1004E74BF /* OESConfigMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigMode.m; path = Classes/Singletons/Config/OESConfigMode.m; sourceTree = "<group>"; };
+		B39FCAEE1629C2F1004E74BF /* OESConfigObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigObject.h; path = Classes/Singletons/Config/OESConfigObject.h; sourceTree = "<group>"; };
+		B39FCAEF1629C2F1004E74BF /* OESConfigObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigObject.m; path = Classes/Singletons/Config/OESConfigObject.m; sourceTree = "<group>"; };
+		B39FCAF01629C2F1004E74BF /* OESConfigParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigParser.h; path = Classes/Singletons/Config/OESConfigParser.h; sourceTree = "<group>"; };
+		B39FCAF11629C2F1004E74BF /* OESConfigParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigParser.m; path = Classes/Singletons/Config/OESConfigParser.m; sourceTree = "<group>"; };
+		B39FCAF21629C2F1004E74BF /* OESConfigParserAbstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigParserAbstract.h; path = Classes/Singletons/Config/OESConfigParserAbstract.h; sourceTree = "<group>"; };
+		B39FCAF31629C2F1004E74BF /* OESConfigParserAbstract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigParserAbstract.m; path = Classes/Singletons/Config/OESConfigParserAbstract.m; sourceTree = "<group>"; };
+		B39FCAF41629C2F1004E74BF /* OESConfigParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigParserDelegate.h; path = Classes/Singletons/Config/OESConfigParserDelegate.h; sourceTree = "<group>"; };
+		B39FCAF51629C2F1004E74BF /* OESConfigVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigVariable.h; path = Classes/Singletons/Config/OESConfigVariable.h; sourceTree = "<group>"; };
+		B39FCAF61629C2F1004E74BF /* OESConfigVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigVariable.m; path = Classes/Singletons/Config/OESConfigVariable.m; sourceTree = "<group>"; };
+		B39FCAF71629C2F1004E74BF /* OESConfigVariableParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESConfigVariableParser.h; path = Classes/Singletons/Config/OESConfigVariableParser.h; sourceTree = "<group>"; };
+		B39FCAF81629C2F1004E74BF /* OESConfigVariableParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESConfigVariableParser.m; path = Classes/Singletons/Config/OESConfigVariableParser.m; sourceTree = "<group>"; };
+		B39FCB0B1629C5DF004E74BF /* OESFileStoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESFileStoreController.h; path = Classes/Controllers/Data/Abstract/OESFileStoreController.h; sourceTree = "<group>"; };
+		B39FCB0C1629C5DF004E74BF /* OESFileStoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESFileStoreController.m; path = Classes/Controllers/Data/Abstract/OESFileStoreController.m; sourceTree = "<group>"; };
+		B39FCB0E1629C658004E74BF /* OESDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESDataController.h; path = Classes/Controllers/Data/Abstract/OESDataController.h; sourceTree = "<group>"; };
+		B39FCB0F1629C658004E74BF /* OESDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESDataController.m; path = Classes/Controllers/Data/Abstract/OESDataController.m; sourceTree = "<group>"; };
+		B3F19C551651C72100085AD1 /* OESIBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESIBView.h; path = Classes/Categories/OESIBView.h; sourceTree = "<group>"; };
+		B3F19C561651C72100085AD1 /* OESIBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESIBView.m; path = Classes/Categories/OESIBView.m; sourceTree = "<group>"; };
+		B3F2CC161631F6AF00C12A3B /* NSObject+PropertyTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+PropertyTypes.h"; path = "Classes/Categories/NSObject+PropertyTypes.h"; sourceTree = "<group>"; };
+		B3F2CC171631F6AF00C12A3B /* NSObject+PropertyTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+PropertyTypes.m"; path = "Classes/Categories/NSObject+PropertyTypes.m"; sourceTree = "<group>"; };
+		D84AB86F165F23D5001691C7 /* OESButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESButton.h; path = Helpers/OESButton.h; sourceTree = "<group>"; };
+		D84AB870165F23D5001691C7 /* OESButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESButton.m; path = Helpers/OESButton.m; sourceTree = "<group>"; };
+		D865547717ED50570072511A /* UITextField+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+OESAdditions.h"; path = "Classes/Categories/UITextField+OESAdditions.h"; sourceTree = "<group>"; };
+		D865547817ED50570072511A /* UITextField+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+OESAdditions.m"; path = "Classes/Categories/UITextField+OESAdditions.m"; sourceTree = "<group>"; };
+		D88678E517DBDF1700F63236 /* OESContainmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESContainmentViewController.h; path = Classes/Controllers/View/OESContainmentViewController.h; sourceTree = "<group>"; };
+		D88678E617DBDF1700F63236 /* OESContainmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESContainmentViewController.m; path = Classes/Controllers/View/OESContainmentViewController.m; sourceTree = "<group>"; };
+		D889B0CD1664825D00BB279A /* NSString+StripHtml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+StripHtml.h"; path = "Classes/Categories/NSString+StripHtml.h"; sourceTree = "<group>"; };
+		D889B0CE1664825E00BB279A /* NSString+StripHtml.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+StripHtml.m"; path = "Classes/Categories/NSString+StripHtml.m"; sourceTree = "<group>"; };
+		D88A324716E02EDB00A8665C /* UILabel+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+OESAdditions.h"; path = "Classes/Categories/UILabel+OESAdditions.h"; sourceTree = "<group>"; };
+		D88A324816E02EDB00A8665C /* UILabel+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+OESAdditions.m"; path = "Classes/Categories/UILabel+OESAdditions.m"; sourceTree = "<group>"; };
+		D88A325316E0462C00A8665C /* NSDate+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+OESAdditions.h"; path = "Classes/Categories/NSDate+OESAdditions.h"; sourceTree = "<group>"; };
+		D88A325416E0462C00A8665C /* NSDate+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+OESAdditions.m"; path = "Classes/Categories/NSDate+OESAdditions.m"; sourceTree = "<group>"; };
+		D88AA1D81672C2BA006D8871 /* OESRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OESRect.h; path = Helpers/OESRect.h; sourceTree = "<group>"; };
+		D88AB5AF165D2EDD0068C825 /* OESInfiniteLabelScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESInfiniteLabelScrollView.h; path = Classes/Controllers/View/OESInfiniteLabelScrollView.h; sourceTree = "<group>"; };
+		D88AB5B0165D2EDD0068C825 /* OESInfiniteLabelScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESInfiniteLabelScrollView.m; path = Classes/Controllers/View/OESInfiniteLabelScrollView.m; sourceTree = "<group>"; };
+		D88D047516E9940A00FE09E3 /* OESActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESActivityIndicatorManager.h; path = Classes/Singletons/OESActivityIndicatorManager/OESActivityIndicatorManager.h; sourceTree = "<group>"; };
+		D88D047616E9940A00FE09E3 /* OESActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESActivityIndicatorManager.m; path = Classes/Singletons/OESActivityIndicatorManager/OESActivityIndicatorManager.m; sourceTree = "<group>"; };
+		D88D047816E9ABB100FE09E3 /* NSArray+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+OESAdditions.h"; path = "Classes/Categories/NSArray+OESAdditions.h"; sourceTree = "<group>"; };
+		D88D047916E9ABB100FE09E3 /* NSArray+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+OESAdditions.m"; path = "Classes/Categories/NSArray+OESAdditions.m"; sourceTree = "<group>"; };
+		D88D047B16E9AC4600FE09E3 /* NSMutableArray+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+OESAdditions.h"; path = "Classes/Categories/NSMutableArray+OESAdditions.h"; sourceTree = "<group>"; };
+		D88D047C16E9AC4600FE09E3 /* NSMutableArray+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+OESAdditions.m"; path = "Classes/Categories/NSMutableArray+OESAdditions.m"; sourceTree = "<group>"; };
+		D88D048016F021EE00FE09E3 /* OESPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESPageControl.h; path = Helpers/OESPageControl.h; sourceTree = "<group>"; };
+		D88D048116F021EF00FE09E3 /* OESPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESPageControl.m; path = Helpers/OESPageControl.m; sourceTree = "<group>"; };
+		D88D9FF91655CF2900959AE2 /* OESCoreTextArcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESCoreTextArcView.h; path = Helpers/OESCoreTextArcView.h; sourceTree = "<group>"; };
+		D88D9FFA1655CF2900959AE2 /* OESCoreTextArcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESCoreTextArcView.m; path = Helpers/OESCoreTextArcView.m; sourceTree = "<group>"; };
+		D88D9FFD1655D17F00959AE2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		D88F1B4017E7EF9B002C2533 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D88F1B4217E7EFA1002C2533 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		D88F1B4417E7EFA7002C2533 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		D88F1B4617E7EFAD002C2533 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		D89C3D0D1774F93800B70998 /* NSObject+OESStatefulObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+OESStatefulObjects.h"; path = "Classes/Categories/NSObject+OESStatefulObjects.h"; sourceTree = "<group>"; };
+		D89C3D0E1774F93800B70998 /* NSObject+OESStatefulObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+OESStatefulObjects.m"; path = "Classes/Categories/NSObject+OESStatefulObjects.m"; sourceTree = "<group>"; };
+		D8A5693D16619CA500453962 /* NSString+URLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncode.h"; path = "Classes/Categories/NSString+URLEncode.h"; sourceTree = "<group>"; };
+		D8A5693E16619CA500453962 /* NSString+URLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncode.m"; path = "Classes/Categories/NSString+URLEncode.m"; sourceTree = "<group>"; };
+		D8A652CE162B0AB3003A147F /* NSObject+OESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+OESAdditions.h"; path = "Classes/Categories/NSObject+OESAdditions.h"; sourceTree = "<group>"; };
+		D8A652CF162B0AB3003A147F /* NSObject+OESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+OESAdditions.m"; path = "Classes/Categories/NSObject+OESAdditions.m"; sourceTree = "<group>"; };
+		D8B8D2A516CB2A110032FDB8 /* OESAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OESAdManager.h; path = Classes/Singletons/OESAdManager/OESAdManager.h; sourceTree = "<group>"; };
+		D8B8D2A616CB2A110032FDB8 /* OESAdManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OESAdManager.m; path = Classes/Singletons/OESAdManager/OESAdManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B39736EB161625F9002245B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88F1B4717E7EFAD002C2533 /* Accounts.framework in Frameworks */,
+				D88F1B4517E7EFA7002C2533 /* iAd.framework in Frameworks */,
+				D88F1B4317E7EFA1002C2533 /* Twitter.framework in Frameworks */,
+				D88F1B4117E7EF9B002C2533 /* AdSupport.framework in Frameworks */,
+				D88D9FFE1655D17F00959AE2 /* CoreText.framework in Frameworks */,
+				B39FCAC21629BC83004E74BF /* QuartzCore.framework in Frameworks */,
+				B39736F2161625F9002245B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39736FB161625F9002245B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3973701161625FA002245B1 /* SenTestingKit.framework in Frameworks */,
+				B3973703161625FA002245B1 /* UIKit.framework in Frameworks */,
+				B3973704161625FA002245B1 /* Foundation.framework in Frameworks */,
+				B3973707161625FA002245B1 /* libOpenEssentials.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B30C5DD417344AB40025D0BC /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				B30C5DD517344ACC0025D0BC /* OESAutomatedController.h */,
+				B30C5DD617344ACC0025D0BC /* OESAutomatedController.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		B38D706916D2EF5E0065D506 /* OESSerialNumberDataController */ = {
+			isa = PBXGroup;
+			children = (
+				B38D706A16D2EF900065D506 /* OESSerialNumberDataController.h */,
+				B38D706B16D2EF900065D506 /* OESSerialNumberDataController.m */,
+			);
+			name = OESSerialNumberDataController;
+			sourceTree = "<group>";
+		};
+		B396707116C9AF840000FA6E /* FeedManager */ = {
+			isa = PBXGroup;
+			children = (
+				B396707216C9AFB50000FA6E /* OESFeedManager.h */,
+				B396707316C9AFB50000FA6E /* OESFeedManager.m */,
+			);
+			name = FeedManager;
+			sourceTree = "<group>";
+		};
+		B39736E3161625F9002245B1 = {
+			isa = PBXGroup;
+			children = (
+				B39736F3161625F9002245B1 /* OpenEssentials */,
+				B3973708161625FA002245B1 /* OpenEssentialsTests */,
+				B39736F0161625F9002245B1 /* Frameworks */,
+				B39736EF161625F9002245B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B39736EF161625F9002245B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B39736EE161625F9002245B1 /* libOpenEssentials.a */,
+				B39736FF161625FA002245B1 /* OpenEssentialsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B39736F0161625F9002245B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D88F1B4617E7EFAD002C2533 /* Accounts.framework */,
+				D88F1B4417E7EFA7002C2533 /* iAd.framework */,
+				D88F1B4217E7EFA1002C2533 /* Twitter.framework */,
+				D88F1B4017E7EF9B002C2533 /* AdSupport.framework */,
+				D88D9FFD1655D17F00959AE2 /* CoreText.framework */,
+				B39FCAC11629BC83004E74BF /* QuartzCore.framework */,
+				B39736F1161625F9002245B1 /* Foundation.framework */,
+				B3973700161625FA002245B1 /* SenTestingKit.framework */,
+				B3973702161625FA002245B1 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B39736F3161625F9002245B1 /* OpenEssentials */ = {
+			isa = PBXGroup;
+			children = (
+				B397371F16162649002245B1 /* Classes */,
+				B39736F6161625F9002245B1 /* OpenEssentials.h */,
+				B39736F8161625F9002245B1 /* OpenEssentials.m */,
+				B3973720161626A1002245B1 /* Helpers */,
+				B39736F4161625F9002245B1 /* Supporting Files */,
+			);
+			path = OpenEssentials;
+			sourceTree = "<group>";
+		};
+		B39736F4161625F9002245B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B39736F5161625F9002245B1 /* OpenEssentials-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3973708161625FA002245B1 /* OpenEssentialsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B397370E161625FA002245B1 /* OpenEssentialsTests.h */,
+				B397370F161625FA002245B1 /* OpenEssentialsTests.m */,
+				B3973709161625FA002245B1 /* Supporting Files */,
+			);
+			path = OpenEssentialsTests;
+			sourceTree = "<group>";
+		};
+		B3973709161625FA002245B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B397370A161625FA002245B1 /* OpenEssentialsTests-Info.plist */,
+				B397370B161625FA002245B1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B397371916162612002245B1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B39737221616274C002245B1 /* UIView+OESView.h */,
+				B39737231616274C002245B1 /* UIView+OESView.m */,
+				B39FCAAF1629B985004E74BF /* UIImageView+RemoteFetching.h */,
+				B39FCAB01629B985004E74BF /* UIImageView+RemoteFetching.m */,
+				B39FCAB31629BA53004E74BF /* NSError+OESAdditions.h */,
+				B39FCAB41629BA53004E74BF /* NSError+OESAdditions.m */,
+				B39FCAB61629BA9F004E74BF /* UIImage+OESAdditions.h */,
+				B39FCAB71629BA9F004E74BF /* UIImage+OESAdditions.m */,
+				B39FCAB91629BAEF004E74BF /* NSDictionary+OESAdditions.h */,
+				B39FCABA1629BAEF004E74BF /* NSDictionary+OESAdditions.m */,
+				D8A652CE162B0AB3003A147F /* NSObject+OESAdditions.h */,
+				D8A652CF162B0AB3003A147F /* NSObject+OESAdditions.m */,
+				B3F2CC161631F6AF00C12A3B /* NSObject+PropertyTypes.h */,
+				B3F2CC171631F6AF00C12A3B /* NSObject+PropertyTypes.m */,
+				B39061D41636F17200F0CF6F /* UIViewController+OESAdditions.h */,
+				B39061D51636F17200F0CF6F /* UIViewController+OESAdditions.m */,
+				B33BB3321651506000DDAC47 /* UIImageView+OESAdditions.h */,
+				B33BB3331651506000DDAC47 /* UIImageView+OESAdditions.m */,
+				D8A5693D16619CA500453962 /* NSString+URLEncode.h */,
+				D8A5693E16619CA500453962 /* NSString+URLEncode.m */,
+				D889B0CD1664825D00BB279A /* NSString+StripHtml.h */,
+				D889B0CE1664825E00BB279A /* NSString+StripHtml.m */,
+				B39621451678E9BB0069694B /* NSURLRequest+IgnoreSSL.h */,
+				B39621461678E9BB0069694B /* NSURLRequest+IgnoreSSL.m */,
+				D88A324716E02EDB00A8665C /* UILabel+OESAdditions.h */,
+				D88A324816E02EDB00A8665C /* UILabel+OESAdditions.m */,
+				D88A325316E0462C00A8665C /* NSDate+OESAdditions.h */,
+				D88A325416E0462C00A8665C /* NSDate+OESAdditions.m */,
+				D88D047816E9ABB100FE09E3 /* NSArray+OESAdditions.h */,
+				D88D047916E9ABB100FE09E3 /* NSArray+OESAdditions.m */,
+				D88D047B16E9AC4600FE09E3 /* NSMutableArray+OESAdditions.h */,
+				D88D047C16E9AC4600FE09E3 /* NSMutableArray+OESAdditions.m */,
+				B30C5DD817344B440025D0BC /* NSNotificationCenter+OESAdditions.h */,
+				B30C5DD917344B440025D0BC /* NSNotificationCenter+OESAdditions.m */,
+				B35ECE5E173DA714001689F0 /* NSObject+OESControllerAutomation.h */,
+				B35ECE5F173DA714001689F0 /* NSObject+OESControllerAutomation.m */,
+				D89C3D0D1774F93800B70998 /* NSObject+OESStatefulObjects.h */,
+				D89C3D0E1774F93800B70998 /* NSObject+OESStatefulObjects.m */,
+				B39F99FA17E760E300598A28 /* UIButton+OESAdditions.h */,
+				B39F99FB17E760E300598A28 /* UIButton+OESAdditions.m */,
+				D865547717ED50570072511A /* UITextField+OESAdditions.h */,
+				D865547817ED50570072511A /* UITextField+OESAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		B397371A16162619002245B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B39BECA9175F97620039E903 /* OESParallaxImage.h */,
+				B39BECAA175F97620039E903 /* OESParallaxImage.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B397371B1616261E002245B1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B30C5DD417344AB40025D0BC /* Abstract */,
+				B397371D16162633002245B1 /* View */,
+				B397371C1616262A002245B1 /* Data */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B397371C1616262A002245B1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B39FCAD11629C09C004E74BF /* Abstract */,
+				B39FCAD21629C0A5004E74BF /* Objects */,
+				B3991CDA170DCBFF001DEAB7 /* OESConfigSerialDataController */,
+				B38D706916D2EF5E0065D506 /* OESSerialNumberDataController */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		B397371D16162633002245B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D88678E517DBDF1700F63236 /* OESContainmentViewController.h */,
+				D88678E617DBDF1700F63236 /* OESContainmentViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B397371F16162649002245B1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B39FCAC31629BD04004E74BF /* Singleton */,
+				B397371B1616261E002245B1 /* Controllers */,
+				B397371A16162619002245B1 /* Model */,
+				B397371916162612002245B1 /* Categories */,
+				B39BECAC175F97B50039E903 /* Views */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B3973720161626A1002245B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B3F19C551651C72100085AD1 /* OESIBView.h */,
+				B3F19C561651C72100085AD1 /* OESIBView.m */,
+				B3973721161626DB002245B1 /* OESEmpty.h */,
+				B39FCABC1629BB7E004E74BF /* OESLogging.h */,
+				B39FCABD1629BBFF004E74BF /* OESSharedInstance.h */,
+				B39FCABE1629BC3B004E74BF /* OESStopwatch.h */,
+				B39FCABF1629BC3B004E74BF /* OESStopwatch.m */,
+				B3909EDF164D5F4D0078CAA1 /* OESXMLReader.h */,
+				B3909EE0164D5F4D0078CAA1 /* OESXMLReader.m */,
+				D88D9FF91655CF2900959AE2 /* OESCoreTextArcView.h */,
+				D88D9FFA1655CF2900959AE2 /* OESCoreTextArcView.m */,
+				D84AB86F165F23D5001691C7 /* OESButton.h */,
+				D84AB870165F23D5001691C7 /* OESButton.m */,
+				B39E436E1663CB2700523610 /* OESURLConnection.h */,
+				B39E436F1663CB2700523610 /* OESURLConnection.m */,
+				D88AA1D81672C2BA006D8871 /* OESRect.h */,
+				D88D048016F021EE00FE09E3 /* OESPageControl.h */,
+				D88D048116F021EF00FE09E3 /* OESPageControl.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B3991CDA170DCBFF001DEAB7 /* OESConfigSerialDataController */ = {
+			isa = PBXGroup;
+			children = (
+				B3991CDB170DCC29001DEAB7 /* OESConfigSerialDataController.h */,
+				B3991CDC170DCC29001DEAB7 /* OESConfigSerialDataController.m */,
+			);
+			name = OESConfigSerialDataController;
+			sourceTree = "<group>";
+		};
+		B39BECAC175F97B50039E903 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D88AB5AD165D2EB80068C825 /* OESInfiniteLabelScrollView */,
+				D88D67101659874E002B3376 /* OESInfiniteCarouselView */,
+				B39BECAD175F97D80039E903 /* OESParallaxView.h */,
+				B39BECAE175F97D80039E903 /* OESParallaxView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B39FCAC31629BD04004E74BF /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				D88D047416E993D800FE09E3 /* ActivityIndicator */,
+				D8B8D2A416CB29DF0032FDB8 /* AdManager */,
+				B396707116C9AF840000FA6E /* FeedManager */,
+				B39FCAC91629BE90004E74BF /* Config */,
+				B39FCAC81629BE88004E74BF /* Twitter */,
+				B39FCAC41629BD0D004E74BF /* Model */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		B39FCAC41629BD0D004E74BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B39FCAC51629BD40004E74BF /* OESModelManager.h */,
+				B39FCAC61629BD40004E74BF /* OESModelManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B39FCAC81629BE88004E74BF /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				B39FCACA1629BEE4004E74BF /* OESTwitterManager.h */,
+				B39FCACB1629BEE4004E74BF /* OESTwitterManager.m */,
+				B39FCACD1629BF96004E74BF /* OESTwitterManagerDelegate.h */,
+				B39FCACE1629BFD9004E74BF /* OESTwitterAction.h */,
+				B39FCACF1629BFD9004E74BF /* OESTwitterAction.m */,
+			);
+			name = Twitter;
+			sourceTree = "<group>";
+		};
+		B39FCAC91629BE90004E74BF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B39FCB0A1629C544004E74BF /* Helper */,
+				B39FCB091629C51F004E74BF /* Abstract */,
+				B39FCAD71629C2F1004E74BF /* OESConfigApp.h */,
+				B39FCAD81629C2F1004E74BF /* OESConfigApp.m */,
+				B39FCADB1629C2F1004E74BF /* OESConfigDatatype.h */,
+				B39FCADC1629C2F1004E74BF /* OESConfigDatatype.m */,
+				B39FCADD1629C2F1004E74BF /* OESConfigDatatypeParser.h */,
+				B39FCADE1629C2F1004E74BF /* OESConfigDatatypeParser.m */,
+				B39FCADF1629C2F1004E74BF /* OESConfigDebug.h */,
+				B39FCAE01629C2F1004E74BF /* OESConfigDebug.m */,
+				B39FCAE11629C2F1004E74BF /* OESConfigEndpoint.h */,
+				B39FCAE21629C2F1004E74BF /* OESConfigEndpoint.m */,
+				B39FCAE31629C2F1004E74BF /* OESConfigEndpoints.h */,
+				B39FCAE41629C2F1004E74BF /* OESConfigEndpoints.m */,
+				B39FCAE51629C2F1004E74BF /* OESConfigException.h */,
+				B39FCAE61629C2F1004E74BF /* OESConfigException.m */,
+				B39FCAE71629C2F1004E74BF /* OESConfigFeature.h */,
+				B39FCAE81629C2F1004E74BF /* OESConfigFeature.m */,
+				B39FCAEA1629C2F1004E74BF /* OESConfigManager.h */,
+				B39FCAEB1629C2F1004E74BF /* OESConfigManager.m */,
+				B39FCAEC1629C2F1004E74BF /* OESConfigMode.h */,
+				B39FCAED1629C2F1004E74BF /* OESConfigMode.m */,
+				B39FCAEE1629C2F1004E74BF /* OESConfigObject.h */,
+				B39FCAEF1629C2F1004E74BF /* OESConfigObject.m */,
+				B39FCAF01629C2F1004E74BF /* OESConfigParser.h */,
+				B39FCAF11629C2F1004E74BF /* OESConfigParser.m */,
+				B39FCAF41629C2F1004E74BF /* OESConfigParserDelegate.h */,
+				B39FCAF51629C2F1004E74BF /* OESConfigVariable.h */,
+				B39FCAF61629C2F1004E74BF /* OESConfigVariable.m */,
+				B39FCAF71629C2F1004E74BF /* OESConfigVariableParser.h */,
+				B39FCAF81629C2F1004E74BF /* OESConfigVariableParser.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		B39FCAD11629C09C004E74BF /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				B39FCB0B1629C5DF004E74BF /* OESFileStoreController.h */,
+				B39FCB0C1629C5DF004E74BF /* OESFileStoreController.m */,
+				B39FCB0E1629C658004E74BF /* OESDataController.h */,
+				B39FCB0F1629C658004E74BF /* OESDataController.m */,
+				B3909EDB164D5E990078CAA1 /* OESNetworkController.h */,
+				B3909EDC164D5E990078CAA1 /* OESNetworkController.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		B39FCAD21629C0A5004E74BF /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B39FCAD61629C0F3004E74BF /* Abstract */,
+				B38D706D16D2EFB50065D506 /* OESSerialNumber.h */,
+				B38D706E16D2EFB50065D506 /* OESSerialNumber.m */,
+				B3991CDE170DCCAD001DEAB7 /* OESConfigSerial.h */,
+				B3991CDF170DCCAD001DEAB7 /* OESConfigSerial.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		B39FCAD61629C0F3004E74BF /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				B39FCAD31629C0D4004E74BF /* OESDynamicObject.h */,
+				B39FCAD41629C0D4004E74BF /* OESDynamicObject.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		B39FCB091629C51F004E74BF /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				B39FCAD91629C2F1004E74BF /* OESConfig.h */,
+				B39FCADA1629C2F1004E74BF /* OESConfig.m */,
+				B39FCAF21629C2F1004E74BF /* OESConfigParserAbstract.h */,
+				B39FCAF31629C2F1004E74BF /* OESConfigParserAbstract.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		B39FCB0A1629C544004E74BF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B39FCAE91629C2F1004E74BF /* OESConfigFramework.h */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		D88AB5AD165D2EB80068C825 /* OESInfiniteLabelScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				D88AB5AF165D2EDD0068C825 /* OESInfiniteLabelScrollView.h */,
+				D88AB5B0165D2EDD0068C825 /* OESInfiniteLabelScrollView.m */,
+			);
+			name = OESInfiniteLabelScrollView;
+			sourceTree = "<group>";
+		};
+		D88D047416E993D800FE09E3 /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				D88D047516E9940A00FE09E3 /* OESActivityIndicatorManager.h */,
+				D88D047616E9940A00FE09E3 /* OESActivityIndicatorManager.m */,
+			);
+			name = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		D88D67101659874E002B3376 /* OESInfiniteCarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				B395A80E164B76E100B3AFE7 /* OESInfiniteCarouselView.h */,
+				B395A80F164B76E100B3AFE7 /* OESInfiniteCarouselView.m */,
+			);
+			name = OESInfiniteCarouselView;
+			sourceTree = "<group>";
+		};
+		D8B8D2A416CB29DF0032FDB8 /* AdManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8B8D2A516CB2A110032FDB8 /* OESAdManager.h */,
+				D8B8D2A616CB2A110032FDB8 /* OESAdManager.m */,
+			);
+			name = AdManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B39736ED161625F9002245B1 /* OpenEssentials */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3973713161625FA002245B1 /* Build configuration list for PBXNativeTarget "OpenEssentials" */;
+			buildPhases = (
+				B39736EA161625F9002245B1 /* Sources */,
+				B39736EB161625F9002245B1 /* Frameworks */,
+				B39736EC161625F9002245B1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenEssentials;
+			productName = OpenEssentials;
+			productReference = B39736EE161625F9002245B1 /* libOpenEssentials.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B39736FE161625F9002245B1 /* OpenEssentialsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3973716161625FA002245B1 /* Build configuration list for PBXNativeTarget "OpenEssentialsTests" */;
+			buildPhases = (
+				B39736FA161625F9002245B1 /* Sources */,
+				B39736FB161625F9002245B1 /* Frameworks */,
+				B39736FC161625F9002245B1 /* Resources */,
+				B39736FD161625F9002245B1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3973706161625FA002245B1 /* PBXTargetDependency */,
+			);
+			name = OpenEssentialsTests;
+			productName = OpenEssentialsTests;
+			productReference = B39736FF161625FA002245B1 /* OpenEssentialsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B39736E5161625F9002245B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = OpenEssentails;
+			};
+			buildConfigurationList = B39736E8161625F9002245B1 /* Build configuration list for PBXProject "OpenEssentials" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B39736E3161625F9002245B1;
+			productRefGroup = B39736EF161625F9002245B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B39736ED161625F9002245B1 /* OpenEssentials */,
+				B39736FE161625F9002245B1 /* OpenEssentialsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B39736FC161625F9002245B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B397370D161625FA002245B1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B39736FD161625F9002245B1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B39736EA161625F9002245B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39736F9161625F9002245B1 /* OpenEssentials.m in Sources */,
+				B39737241616274C002245B1 /* UIView+OESView.m in Sources */,
+				B39FCAB11629B985004E74BF /* UIImageView+RemoteFetching.m in Sources */,
+				B39FCAB51629BA54004E74BF /* NSError+OESAdditions.m in Sources */,
+				B39FCAB81629BA9F004E74BF /* UIImage+OESAdditions.m in Sources */,
+				B39FCABB1629BAEF004E74BF /* NSDictionary+OESAdditions.m in Sources */,
+				B39FCAC01629BC3B004E74BF /* OESStopwatch.m in Sources */,
+				B39FCAC71629BD40004E74BF /* OESModelManager.m in Sources */,
+				B39FCACC1629BEE4004E74BF /* OESTwitterManager.m in Sources */,
+				B39FCAD01629BFD9004E74BF /* OESTwitterAction.m in Sources */,
+				B39FCAD51629C0D4004E74BF /* OESDynamicObject.m in Sources */,
+				B39FCAF91629C2F1004E74BF /* OESConfigApp.m in Sources */,
+				B39FCAFA1629C2F1004E74BF /* OESConfig.m in Sources */,
+				B39FCAFB1629C2F1004E74BF /* OESConfigDatatype.m in Sources */,
+				B39FCAFC1629C2F1004E74BF /* OESConfigDatatypeParser.m in Sources */,
+				B39FCAFD1629C2F1004E74BF /* OESConfigDebug.m in Sources */,
+				B39FCAFE1629C2F1004E74BF /* OESConfigEndpoint.m in Sources */,
+				B39FCAFF1629C2F1004E74BF /* OESConfigEndpoints.m in Sources */,
+				B39FCB001629C2F1004E74BF /* OESConfigException.m in Sources */,
+				B39FCB011629C2F1004E74BF /* OESConfigFeature.m in Sources */,
+				D89C3D0F1774F93800B70998 /* NSObject+OESStatefulObjects.m in Sources */,
+				B39FCB021629C2F1004E74BF /* OESConfigManager.m in Sources */,
+				B39FCB031629C2F1004E74BF /* OESConfigMode.m in Sources */,
+				B39FCB041629C2F1004E74BF /* OESConfigObject.m in Sources */,
+				B39FCB051629C2F1004E74BF /* OESConfigParser.m in Sources */,
+				B39FCB061629C2F1004E74BF /* OESConfigParserAbstract.m in Sources */,
+				B39FCB071629C2F1004E74BF /* OESConfigVariable.m in Sources */,
+				B39FCB081629C2F1004E74BF /* OESConfigVariableParser.m in Sources */,
+				B39FCB0D1629C5DF004E74BF /* OESFileStoreController.m in Sources */,
+				B39FCB101629C658004E74BF /* OESDataController.m in Sources */,
+				D8A652D0162B0AB3003A147F /* NSObject+OESAdditions.m in Sources */,
+				B3F2CC181631F6AF00C12A3B /* NSObject+PropertyTypes.m in Sources */,
+				B39061D61636F17200F0CF6F /* UIViewController+OESAdditions.m in Sources */,
+				B395A810164B76E100B3AFE7 /* OESInfiniteCarouselView.m in Sources */,
+				B33BB3341651506000DDAC47 /* UIImageView+OESAdditions.m in Sources */,
+				B3F19C571651C72100085AD1 /* OESIBView.m in Sources */,
+				B3909EDD164D5E990078CAA1 /* OESNetworkController.m in Sources */,
+				B3909EE1164D5F4D0078CAA1 /* OESXMLReader.m in Sources */,
+				D88D9FFB1655CF2900959AE2 /* OESCoreTextArcView.m in Sources */,
+				D88AB5B1165D2EDD0068C825 /* OESInfiniteLabelScrollView.m in Sources */,
+				D865547917ED50570072511A /* UITextField+OESAdditions.m in Sources */,
+				D84AB871165F23D5001691C7 /* OESButton.m in Sources */,
+				D8A5693F16619CA500453962 /* NSString+URLEncode.m in Sources */,
+				B39E43701663CB2700523610 /* OESURLConnection.m in Sources */,
+				D889B0CF1664825E00BB279A /* NSString+StripHtml.m in Sources */,
+				B39621471678E9BB0069694B /* NSURLRequest+IgnoreSSL.m in Sources */,
+				B396707416C9AFB50000FA6E /* OESFeedManager.m in Sources */,
+				D8B8D2A716CB2A110032FDB8 /* OESAdManager.m in Sources */,
+				B38D706C16D2EF900065D506 /* OESSerialNumberDataController.m in Sources */,
+				B38D706F16D2EFB50065D506 /* OESSerialNumber.m in Sources */,
+				D88A324916E02EDB00A8665C /* UILabel+OESAdditions.m in Sources */,
+				D88A325516E0462D00A8665C /* NSDate+OESAdditions.m in Sources */,
+				D88D047716E9940A00FE09E3 /* OESActivityIndicatorManager.m in Sources */,
+				D88D047A16E9ABB100FE09E3 /* NSArray+OESAdditions.m in Sources */,
+				D88D047D16E9AC4700FE09E3 /* NSMutableArray+OESAdditions.m in Sources */,
+				D88D048216F021F000FE09E3 /* OESPageControl.m in Sources */,
+				B3991CDD170DCC29001DEAB7 /* OESConfigSerialDataController.m in Sources */,
+				B3991CE0170DCCAD001DEAB7 /* OESConfigSerial.m in Sources */,
+				B30C5DD717344ACC0025D0BC /* OESAutomatedController.m in Sources */,
+				B30C5DDA17344B440025D0BC /* NSNotificationCenter+OESAdditions.m in Sources */,
+				B35ECE60173DA714001689F0 /* NSObject+OESControllerAutomation.m in Sources */,
+				B39BECAB175F97620039E903 /* OESParallaxImage.m in Sources */,
+				B39F99FC17E760E300598A28 /* UIButton+OESAdditions.m in Sources */,
+				D88678E717DBDF1700F63236 /* OESContainmentViewController.m in Sources */,
+				B39BECAF175F97D80039E903 /* OESParallaxView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39736FA161625F9002245B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3973710161625FA002245B1 /* OpenEssentialsTests.m in Sources */,
+				B39737251616274C002245B1 /* UIView+OESView.m in Sources */,
+				D89C3D101774F93800B70998 /* NSObject+OESStatefulObjects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3973706161625FA002245B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B39736ED161625F9002245B1 /* OpenEssentials */;
+			targetProxy = B3973705161625FA002245B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B397370B161625FA002245B1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B397370C161625FA002245B1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3973711161625FA002245B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B3973712161625FA002245B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3973714161625FA002245B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OpenEssentials.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenEssentials/OpenEssentials-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B3973715161625FA002245B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OpenEssentials.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenEssentials/OpenEssentials-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B3973717161625FA002245B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenEssentials/OpenEssentials-Prefix.pch";
+				INFOPLIST_FILE = "OpenEssentialsTests/OpenEssentialsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B3973718161625FA002245B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenEssentials/OpenEssentials-Prefix.pch";
+				INFOPLIST_FILE = "OpenEssentialsTests/OpenEssentialsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B39736E8161625F9002245B1 /* Build configuration list for PBXProject "OpenEssentials" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3973711161625FA002245B1 /* Debug */,
+				B3973712161625FA002245B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3973713161625FA002245B1 /* Build configuration list for PBXNativeTarget "OpenEssentials" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3973714161625FA002245B1 /* Debug */,
+				B3973715161625FA002245B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3973716161625FA002245B1 /* Build configuration list for PBXNativeTarget "OpenEssentialsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3973717161625FA002245B1 /* Debug */,
+				B3973718161625FA002245B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B39736E5161625F9002245B1 /* Project object */;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>87EDFC39-309D-4DC0-8FCC-991B42E16592</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MineSweeper</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6F1AD4FEF80BB8968EF74853E79B171E71C0F3A7</key>
+		<string>ssh://gr2.openaprs.net/home/omni/git/MineSweeper.git</string>
+		<key>77E2908333CF83F83D38560A0DD6C8162874A196</key>
+		<string>ssh://gr2.openaprs.net/home/omni/git/OpenEssentials.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MineSweeper.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6F1AD4FEF80BB8968EF74853E79B171E71C0F3A7</key>
+		<string>../..</string>
+		<key>77E2908333CF83F83D38560A0DD6C8162874A196</key>
+		<string>../..Submodules/OpenEssentials/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://gr2.openaprs.net/home/omni/git/MineSweeper.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6F1AD4FEF80BB8968EF74853E79B171E71C0F3A7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6F1AD4FEF80BB8968EF74853E79B171E71C0F3A7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MineSweeper</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>77E2908333CF83F83D38560A0DD6C8162874A196</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OpenEssentials</string>
+		</dict>
+	</array>
+</dict>
+</plist>
